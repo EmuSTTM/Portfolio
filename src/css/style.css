@@ -4,6 +4,14 @@ svg,path {
     height: 24px;
 }
 
+a {
+    text-decoration: none;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
 
 .disabled {
     display: none;
