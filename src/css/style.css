@@ -10,9 +10,18 @@ a {
 
 *, :after, :before {
     box-sizing: border-box;
+    margin: 0;
+}
+
+i{
+    color: var(--main-color)
 }
 
 
+section {
+    display: block;;
+}
 .disabled {
     display: none;
 }
+

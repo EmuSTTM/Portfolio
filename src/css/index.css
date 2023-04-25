@@ -7,7 +7,7 @@
     --navbar-divider-color: #343538;
     --navbar-menu-heading: #959cb2;
     --navbar-menu-modes-bg: #e1e4ea;
-    --navbar-meu-mode-text: #67718e;
+    --navbar-meu-mode-text: #8e7367;
     --navbar-menu-mode-active-shadow: inset 0 1px 0 #fff;
     --navbar-menu-mode-active-bg: #f3f4f6;
     --navbar-menu-mode-active-text: #2a3451;
@@ -15,9 +15,12 @@
     --navbar-menu-border: #fff;
     --navbar-menu-link: #111218;
     --navbar-dropdown-shadow: rgba(166,176,201,.64);
-
+    --navbar-bg: #f3f4f6;
+    --navbar-border: hsla(0, 0%, 100%, 0.56);
     --navbar-dropdown-item-hover-bg: #e7e9ee;
     --navbar-dropdown-item-hover-text: #272a35;
+    --navbar-bg-blured: rgba(234, 227, 225, 0.48);
+    --max-width: 1200px;
 
 
 }

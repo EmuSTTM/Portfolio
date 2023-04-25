@@ -37,3 +37,15 @@ mq.addEventListener("change", () =>{
     
 })
 
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document.getElementById('header').classList.remove('header-blured');
+      } else {
+        document.getElementById('header').classList.add('header-blured');
+      }
+    });
+  }, {threshold: 1});
+  observer.observe(document.getElementById('home'));

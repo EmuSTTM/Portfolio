@@ -16,9 +16,25 @@
     flex-direction: column;
     z-index: 1;
     border-radius: 0.5rem;
-    background-color: var(--main-color);
-    border: 1px solid var(--navbar-menu-border);
+    background-color: transparent;
+    
     transition: background-color .25s ease;
+}
+
+.header-blured {
+    border: 1px solid var(--navbar-menu-border);
+    background-color: var(--navbar-bg);
+    border: 1px solid var(--navbar-border);
+    -webkit-backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1.5rem);
+}
+
+@supports ((-webkit-backdrop-filter:blur(1.5rem)) or (backdrop-filter:blur(1.5rem))){
+    .header-blured {
+        background-color: var(--navbar-bg-blured);
+    }
+    
+
 }
 
 
@@ -171,6 +187,7 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    margin-right: 1.6vw;
 }
 .menu_links {
     list-style: none;
