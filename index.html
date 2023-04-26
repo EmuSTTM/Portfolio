@@ -130,7 +130,7 @@
           <div data-aos="fade-down" class="home__data aos-init aos-animate">
             <h1 class="home__name"> Nicolás Perdomo</h1>
             <h3 class="home__rol">Desarrollador Web</h3>
-            <a href="#" target="_blank" class="home__buton" data-aos="fade-down">Resume</a>
+            <a href="#" target="_blank" class="home__button" data-aos="fade-down">Resume</a>
             <div data-aos="fade-down" class="home__social aos-init aos-animate">
                 <a href="https://www.linkedin.com/in/nicol%C3%A1s-perdomo-5b270b23a/" target="_blank" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
                 <a href="https://github.com/EmuSTTM" target="_blank" class="home__social-icon"><i class="bx bxl-github"></i></a>
@@ -149,15 +149,20 @@
       <section data-aos="fade-down" class="projects " id="projects">
         <h3 class="section-title">Proyectos</h3>
 
-        <div class="projects__container h-grid">
-          <div data-aos="fade-down" class="projects__links aos-init aos-animate">
-            <a href="https://nperdomodev.netlify.app/" target="_blank"><img src="./images/byteboh.PNG" alt=""></a>
+        <div class="projects__container ">
+          <div  class="projects__links ">
+            <img src="./images/byteboh.PNG" alt="">
             <h4 class="project__title">Electronic Components Store</h4>
             <p class="project_description">
-                E-comerce de productos electrónicos. Cuenta con un armador de computadoras que detecta la compatibildiad entre componentes.
+                E-comerce de productos electrónicos. Cuenta con un armador de computadoras que detecta la compatibilidad entre componentes.
             </p>
+            <ul class="project_tags">
+                <li class="project_tag">NodeJS</li>
+                <li class="project_tag">Express</li>
+                <li class="project_tag">MongoDB</li>
+            </ul>
             <footer class="project_links">
-                <a class="link_anchor project_link" target="_blank" rel="noopener noreferrer" href="https://upload-file.vercel.app/">
+                <a class="link_anchor project_link" target="_blank" rel="noopener noreferrer" href="https://byteboh.onrender.com/">
                     <svg aria-hidden="true" role="img" class="octicon octicon-rocket" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
                         <path fill-rule="evenodd" d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z">
 
@@ -166,7 +171,7 @@
                      Resultado
                 </a>
 
-                <a class="link_anchor project_link"  target="_blank" rel="noopener noreferrer" href="https://github.com/EmuSTTM/vacaciones-cody">
+                <a class="link_anchor project_link"  target="_blank" rel="noopener noreferrer" href="https://github.com/EmuSTTM/Electronic-Components-Store">
                     <svg aria-hidden="true" role="img" class="octicon octicon-code" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
                         <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z">
                     
@@ -177,35 +182,105 @@
             </footer>
           </div>
 
-          <div data-aos="fade-down" class="projects__links aos-init aos-animate">
-            <a href="https://landing-page-hunddle.netlify.app/" target="_blank"><img src="./images/task.PNG" alt=""></a>
-            <h4 class="project__title">Administrador de pacientes veterinario</h4>
+          <div  class="projects__links ">
+            <img src="./images/task.PNG" alt="">
+            <h4 class="project__title">Mern Context Crud</h4>
+            <p class="project_description">
+               App que permite realizar posts. Realizado con el stack MERN.
+            </p>
+            <ul class="project_tags">
+                <li class="project_tag">React</li>
+                <li class="project_tag">Express</li>
+                <li class="project_tag">MongoDB</li>
+            </ul>
+            <footer class="project_links">
+                <a class="link_anchor project_link" target="_blank" rel="noopener noreferrer" href="https://mern-context-crud-gyqs.onrender.com/">
+                    <svg aria-hidden="true" role="img" class="octicon octicon-rocket" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                        <path fill-rule="evenodd" d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z">
 
-            <div class="project__link-item">
-              <a href="https://github.com/EmuSTTM/veterinario-react" class="project__item" target="_blank"><i class="bx bxl-github"></i></a>
-              <a href="https://adm-pacientes-veterinario.netlify.app/" class="project__item" target="_blank"><i class="bx bx-globe"></i></a>
-            </div>
+                        </path>
+                    </svg>
+                     Resultado
+                </a>
+
+                <a class="link_anchor project_link"  target="_blank" rel="noopener noreferrer" href="https://github.com/EmuSTTM/Mern-Context-Crud">
+                    <svg aria-hidden="true" role="img" class="octicon octicon-code" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                        <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z">
+                    
+                </path>
+                </svg>
+                     Código fuente
+                </a>
+            </footer>
           </div>
 
-          <div data-aos="fade-down" class="projects__links aos-init">
-            <a href="https://landing-page-hunddle.netlify.app/" target="_blank"><img src="./images/translate.PNG" alt=""></a>
-            <h4 class="project__title">Huddle Landing Page</h4>
+          <div  class="projects__links ">
+            <img src="./images/giffy.PNG" alt="">
+            <h4 class="project__title">Gif Search</h4>
+            <p class="project_description">
+               App que permite buscar GIFs, contando con un filtrador de edades, sessions y un aparado de los GIFs más buscados. 
+            </p>
+            <ul class="project_tags">
+                <li class="project_tag">React</li>
+                <li class="project_tag">JavaScript</li>
+                <li class="project_tag">TailwindCSS</li>
+            </ul>
+            <footer class="project_links">
+                <a class="link_anchor project_link" target="_blank" rel="noopener noreferrer" href="https://mern-context-crud-gyqs.onrender.com/">
+                    <svg aria-hidden="true" role="img" class="octicon octicon-rocket" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                        <path fill-rule="evenodd" d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z">
 
-            <div class="project__link-item">
-              <a href="https://github.com/EmuSTTM/landing-page-frontend-mentor.git" class="project__item" target="_blank"><i class="bx bxl-github"></i></a>
-              <a href="https://landing-page-hunddle.netlify.app/" class="project__item" target="_blank"><i class="bx bx-globe"></i></a>
-            </div>
+                        </path>
+                    </svg>
+                     Resultado
+                </a>
+
+                <a class="link_anchor project_link"  target="_blank" rel="noopener noreferrer" href="https://github.com/EmuSTTM/Mern-Context-Crud">
+                    <svg aria-hidden="true" role="img" class="octicon octicon-code" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                        <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z">
+                    
+                </path>
+                </svg>
+                     Código fuente
+                </a>
+            </footer>
           </div>
 
-          <div data-aos="fade-down" class="projects__links aos-init">
-            <a href="https://search-your-car.netlify.app/" target="_blank"><img src="./images/giffy.PNG" alt=""></a>
-            <h4 class="project__title">Filtrador de búsquedas (autos)</h4>
+          <div  class="projects__links ">
+            <img src="./images/translate.PNG" alt="">
+            <h4 class="project__title">Google Translate Clone</h4>
+            <p class="project_description">
+               Una copia del translate de google, utiliza una API externa para la traducción. 
+            </p>
+            <ul class="project_tags">
+                <li class="project_tag">React</li>
+                <li class="project_tag">Redux</li>
+                <li class="project_tag">TailwindCSS</li>
+            </ul>
+            <footer class="project_links">
+                <a class="link_anchor project_link" target="_blank" rel="noopener noreferrer" href="https://mern-context-crud-gyqs.onrender.com/">
+                    <svg aria-hidden="true" role="img" class="octicon octicon-rocket" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                        <path fill-rule="evenodd" d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z">
 
-            <div class="project__link-item">
-              <a href="https://github.com/EmuSTTM/filtrador-de-busquedas.git" class="project__item" target="_blank"><i class="bx bxl-github"></i></a>
-              <a href="https://search-your-car.netlify.app/" class="project__item" target="_blank"><i class="bx bx-globe"></i></a>
-            </div>
+                        </path>
+                    </svg>
+                     Resultado
+                </a>
+
+                <a class="link_anchor project_link"  target="_blank" rel="noopener noreferrer" href="https://github.com/EmuSTTM/Mern-Context-Crud">
+                    <svg aria-hidden="true" role="img" class="octicon octicon-code" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                        <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z">
+                    
+                </path>
+                </svg>
+                     Código fuente
+                </a>
+            </footer>
           </div>
+          
+          
+
+        
 
         </div>
       </section>

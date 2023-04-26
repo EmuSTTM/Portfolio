@@ -1,9 +1,11 @@
 :root{
     --main-color: #d26648;
     --main-color-transparent: #d266487a;
+    --second-color: #d3c157;
     --font-body: "Manrope var","Manrope",sans-serif;
     --body-bg: #f9f9fb;
     --body-text:#111218;
+    --hero-link-shadow: 0 0.25rem 2.5rem -0.875rem #d26648;
     --navbar-divider-color: #343538;
     --navbar-menu-heading: #959cb2;
     --navbar-menu-modes-bg: #e1e4ea;
@@ -30,7 +32,9 @@
     --projects-project-link-web-text: #f7f9fd;
     --projects-project-link-web-shadow: 0 0.25rem 2.5rem -0.875rem #d770c2;;
     --projects-project-desc-text: #67718e;
-
+    --projects-project-tag-bg: #edeff2;
+    --projects-project-tag-text: #67718e;
+    --projects-project-link-web-bg: linear-gradient(90deg,var(--main-color),var(--second-color));
 }
 
 

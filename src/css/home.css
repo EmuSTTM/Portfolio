@@ -82,12 +82,14 @@
   }
 
 
-.home__buton {
+.home__button {
     background-color: var(--main-color);
     color: #fff;
     padding: 0.75rem 2.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
+    /* box-shadow: var(--hero-link-shadow) */
+    
 }
 
 
@@ -95,6 +97,7 @@
     font-size: clamp(2.25rem,3vw,2.5rem);
     font-weight: 800;
     margin-bottom: 15px;
+   
 
     
 }
