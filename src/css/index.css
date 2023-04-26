@@ -1,6 +1,6 @@
 :root{
     --main-color: #d26648;
-   
+    --main-color-transparent: #d266487a;
     --font-body: "Manrope var","Manrope",sans-serif;
     --body-bg: #f9f9fb;
     --body-text:#111218;
@@ -13,7 +13,7 @@
     --navbar-menu-mode-active-text: #2a3451;
     --navbar-menu-bg: #f3f4f6;
     --navbar-menu-border: #fff;
-    --navbar-menu-link: #111218;
+    --navbar-menu-link: #67718e;
     --navbar-dropdown-shadow: rgba(166,176,201,.64);
     --navbar-bg: #f3f4f6;
     --navbar-border: hsla(0, 0%, 100%, 0.56);
@@ -21,7 +21,15 @@
     --navbar-dropdown-item-hover-text: #272a35;
     --navbar-bg-blured: rgba(234, 227, 225, 0.48);
     --max-width: 1200px;
-
+    --projects-project-bg: #fff;
+    --projects-project-border: #f2f4f7;
+    --projects-project-link: #67718e;
+    --projects-project-link-bg: #edeff2;
+    --projects-project-shadow-hover: #acb2c3;
+    --projects-project-link-web-bg: linear-gradient(90deg,#d32246,#8c22d3);
+    --projects-project-link-web-text: #f7f9fd;
+    --projects-project-link-web-shadow: 0 0.25rem 2.5rem -0.875rem #d770c2;;
+    --projects-project-desc-text: #67718e;
 
 }
 
