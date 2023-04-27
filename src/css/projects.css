@@ -3,7 +3,10 @@
     width: 90%;
     margin: 0 auto;
     font-weight: 8;
+    padding-top: 60px;
 }
+
+
 
 @media screen and (min-width: 500px){
     .projects{
@@ -189,6 +192,31 @@ img {
     color: black;
 }
 
+@media screen and (min-width: 1200px){
+    .projects_collection, .projects_footer {
+        padding: 0;
+    }
+}
 
 
+.projects_footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1.5rem 1.5rem;
+}
 
+.projects_link {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #4f7cf8;
+    position: relative;
+}
+
+.link_anchor {
+
+    text-decoration: none;
+}

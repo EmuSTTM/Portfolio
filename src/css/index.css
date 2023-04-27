@@ -28,13 +28,80 @@
     --projects-project-link: #67718e;
     --projects-project-link-bg: #edeff2;
     --projects-project-shadow-hover: #acb2c3;
-    --projects-project-link-web-bg: linear-gradient(90deg,#d32246,#8c22d3);
     --projects-project-link-web-text: #f7f9fd;
     --projects-project-link-web-shadow: 0 0.25rem 2.5rem -0.875rem #d770c2;;
     --projects-project-desc-text: #67718e;
     --projects-project-tag-bg: #edeff2;
     --projects-project-tag-text: #67718e;
     --projects-project-link-web-bg: linear-gradient(90deg,var(--main-color),var(--second-color));
+    --skill-caption-text: #7d86a1;
+    --bash-color: 208,16%,19%;
+    --skill-bash-bg: hsla(var(--bash-color),8%);
+
+    --react-color: 193,95%,68%;
+    --skill-react-bg: hsla(var(--react-color),8%);
+    --skill-react-fill-color: hsl(var(--react-color));
+    --skill-react-border-shadow: hsla(var(--react-color),24%);
+    --node-color: 89,53%,54%;
+    --skill-node-bg: hsla(var(--node-color),8%);
+    --skill-node-fill-color: hsl(var(--node-color));
+    --skill-node-border-shadow: hsla(var(--node-color),24%);
+
+    --next-color: 0,50%,0%;
+    --skill-next-bg: hsla(var(--next-color),8%);
+    --skill-next-fill-color: hsl(var(--next-color));
+    --skill-next-border-shadow: hsla(var(--next-color),8%);
+
+    --typescript-color: 211,60%,48%;
+    --skill-typescript-bg: hsla(var(--typescript-color),8%);
+    --skill-typescript-fill-color: hsl(var(--typescript-color));
+    --skill-typescript-border-shadow: hsla(var(--typescript-color),8%);
+
+    --git-color: 11,90%,55%;
+    --skill-git-bg: hsla(var(--git-color),8%);
+    --skill-git-fill-color: hsl(var(--git-color));
+    --skill-git-border-shadow: hsla(var(--git-color),8%);
+
+    --bash-color: 208,16%,19%;
+    --skill-bash-bg: hsla(var(--bash-color),8%);
+    --skill-bash-fill-color: hsl(var(--bash-color));
+    --skill-bash-border-shadow: hsla(var(--bash-color),8%);
+
+    --bash-color: 208,16%,19%;
+    --skill-bash-bg: hsla(var(--bash-color),8%);
+    --skill-bash-fill-color: hsl(var(--bash-color));
+    --skill-bash-border-shadow: hsla(var(--bash-color),8%);
+
+    --tailwind-color: 183,100%,43%;
+    --skill-tailwind-bg: hsla(var(--tailwind-color),8%);
+    --skill-tailwind-fill-color: hsl(var(--tailwind-color));
+    --skill-tailwind-border-shadow: hsla(var(--tailwind-color),8%);
+
+    --mongodb-color: 123, 49%, 46%;
+    --skill-mongodb-bg: hsla(var(--mongodb-color), 8%);
+    --skill-mongodb-fill-color: hsl(var(--mongodb-color));
+    --skill-mongodb-border-shadow: hsla(var(--mongodb-color), 8%);
+
+    --postgresql-color: 206, 92%, 40%;
+    --skill-postgresql-bg: hsla(var(--postgresql-color), 8%);
+    --skill-postgresql-fill-color: hsl(var(--postgresql-color));
+    --skill-postgresql-border-shadow: hsla(var(--postgresql-color), 8%);
+
+    --express-color: 57, 93%, 55%;
+    --skill-express-bg: hsla(var(--express-color), 8%);
+    --skill-express-fill-color: hsl(var(--express-color));
+    --skill-express-border-shadow: hsla(var(--express-color), 8%);
+
+    --css-color: 207, 87%, 56%;
+    --skill-css-bg: hsla(var(--css-color), 8%);
+    --skill-css-fill-color: hsl(var(--css-color));
+    --skill-css-border-shadow: hsla(var(--css-color), 8%);
+
+    --html-color: 10, 78%, 55%;
+    --skill-html-bg: hsla(var(--html-color), 8%);
+    --skill-html-fill-color: hsl(var(--html-color));
+    --skill-html-border-shadow: hsla(var(--html-color), 8%);
+
 }
 
 

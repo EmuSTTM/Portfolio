@@ -34,9 +34,30 @@
   order: 3;
 }
 
+
+
 .home__img-perfil {
   width: 300px;
   height: auto;
+}
+.img {
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  width: 360px;
+  height: 360px;
+  position: relative;
+  transition: .3s;
+  border-radius: 51% 49% 51% 49% / 72% 73% 27% 28%
+  ;
+  animation: profile-animate 10s ease-in-out infinite 1s;
+  margin: 0px 0px 10px 0px;
+}
+@media(min-width: 500px){
+  .img {
+    min-height: 50vh;
+    margin: 0;
+  }
 }
 
 .home__social-icon {
@@ -45,18 +66,7 @@
 }
 
 
-.img {
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh;
-    width: 360px;
-    height: 360px;
-    position: relative;
-    transition: .3s;
-    border-radius: 51% 49% 51% 49% / 72% 73% 27% 28%
-    ;
-    animation: profile-animate 10s ease-in-out infinite 1s;
-}
+
 
 @keyframes profile-animate {
     0% {
