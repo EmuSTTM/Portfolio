@@ -9,7 +9,9 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
+
 
 .skills_header {
     padding-top: 3rem;
