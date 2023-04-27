@@ -1,0 +1,36 @@
+.footer {
+    color: var(b);
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+    background-color: var(--navbar-bg-blured);
+    z-index: -10;
+    font-weight: 600;
+}
+
+.footer_text{
+    font-size: .875rem;
+
+}
+
+
+.footer__title {
+    margin-bottom: 10px;
+
+
+}
+
+.footer__title span {
+    color: rgb(79, 124, 248);
+}
+
+
+.footer__social i {
+    color:var(--second-color);
+    font-size: 1.3em;
+    margin: 0 10px;
+}
+
+.footer__social{
+    margin-bottom: 10px;
+}

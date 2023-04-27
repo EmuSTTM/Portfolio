@@ -102,6 +102,7 @@
     --skill-html-fill-color: hsl(var(--html-color));
     --skill-html-border-shadow: hsla(var(--html-color), 8%);
 
+    --projects-project-image-shadow-color-2: radial-gradient(circle,rgba(241,126,147,.54) 64%,rgba(191,126,241,.54) 100%);
 }
 
 

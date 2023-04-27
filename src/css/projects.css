@@ -3,7 +3,7 @@
     width: 90%;
     margin: 0 auto;
     font-weight: 8;
-    padding-top: 60px;
+    padding-top: 2rem;
 }
 
 
@@ -23,7 +23,7 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
-    margin: 2rem 0;
+    margin: 3rem 0;
     /* color: var(--main-color-transparent) ; */
     text-transform: uppercase;
     background-image: url(../../images/project-background.png);
