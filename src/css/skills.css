@@ -8,30 +8,30 @@
 
 }
 
-.skills-grid_container{
+.skills-grid_container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.skills_skill{
+.skills_skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
 }
 
-@media screen and (min-width: 768px){
-.skills_grid {
-    gap: 3rem;
-    padding: 0;
-}
+@media screen and (min-width: 768px) {
+    .skills_grid {
+        gap: 3rem;
+        padding: 0;
+    }
 }
 
 .skills_grid {
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -41,17 +41,18 @@
     z-index: 1;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
     .skills_grid {
-        grid-template-columns:repeat(4, 1fr);
-}
-}
-
-
-@media screen and (min-width: 768px){
-    .skills_grid {
-        grid-template-columns:repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
+}
+
+
+@media screen and (min-width: 768px) {
+    .skills_grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
     .skills_container:after {
 
         right: -20rem;
@@ -72,7 +73,7 @@
 }
 
 
-.skills_caption{
+.skills_caption {
 
     font-size: 1rem;
     font-weight: 600;
@@ -162,7 +163,8 @@
 
 
 
-.skills-grid_container:after, .skills-grid_container:before {
+.skills-grid_container:after,
+.skills-grid_container:before {
     position: absolute;
     inset: 0;
     margin: auto;
@@ -175,10 +177,12 @@
 
 .skills-grid_container:before {
     content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjMyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMwIDMyMEgwVjE1MUwxMzAgMGwxNTYgMTIzTDQ4MyAwbDI5IDEzMHYxNDJsLTIxNi01OC0xNjYgMTA2WiIgZmlsbD0iI0YxN0U5MyIgZmlsbC1vcGFjaXR5PSIuMiIvPjwvc3ZnPg==);
-    transform: translate(-52%,82%) scale(.7);
+    transform: translate(-52%, 82%) scale(.7);
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
     box-sizing: border-box;
 }
 
@@ -192,7 +196,7 @@
     top: -12rem;
     right: -20rem;
     background: var(--projects-project-image-shadow-color-2);
-    
+
     width: 33%;
     height: 25%;
     content: "";
@@ -200,16 +204,15 @@
     border-radius: 55% 45% 33% 67% / 51% 52% 48% 49%;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .skills-grid_container:after {
         top: -7rem;
         right: -40rem;
         width: 35%;
         height: 25%;
     }
+
     .skills-grid_container:before {
-        transform: translate(-52%,42%) scale(.7);
+        transform: translate(-52%, 42%) scale(.7);
     }
 }
-
-

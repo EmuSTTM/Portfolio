@@ -12,7 +12,7 @@
     font-weight: 600;
 }
 
-.footer_text{
+.footer_text {
     font-size: .875rem;
 
 }
@@ -30,11 +30,11 @@
 
 
 .footer__social i {
-    color:var(--second-color);
+    color: var(--second-color);
     font-size: 1.3em;
     margin: 0 10px;
 }
 
-.footer__social{
+.footer__social {
     margin-bottom: 10px;
 }

@@ -1,55 +1,38 @@
-
-import { HeaderMobile } from "./components/HeaderMobile.js";
-import { HeaderComputer } from "./components/HeaderComputer.js";
-
-import {detectCurrentSection} from "./helpers/detectCurrentSection.js";
-
-import ExpandedButton, { systemLightDetecter } from "./components/ExpandedButton.js";
-import LightButton from "./components/LightButton.js";
-import navListeners from "./helpers/headerEvListeners.js"
-
+import { systemLightDetecter } from "./components/ExpandedButton.js";
+import navListeners from "./helpers/headerEvListeners.js";
 const mq = window.matchMedia("(min-width: 768px)");
 const header = document.getElementById("header");
 
-// Detectamos el mode color del navegador, dark o light
-systemLightDetecter()
+//Detectamo el color del sistema por defecto
+systemLightDetecter();
+// Preparamos el sitio para distintos dispositivos mobiles
+async function renderHeader(mqMatches) {
+  if (mqMatches === true) {
+    const { HeaderComputer } = await import("./components/HeaderComputer.js");
+    const { LightButton } = await import("./components/LightButton.js");
 
-/*
-Manejamos el renderizado del header / funcionalidades del header
-cuando se cambia el tamaño de pantalla.
-*/
-if ( mq.matches === true ) {
+    const { detectCurrentSection } = await import(
+      "./helpers/detectCurrentSection.js"
+    );
+
     header.innerHTML = HeaderComputer;
-    LightButton()
-    navListeners(mq.matches)
-    detectCurrentSection()
-} 
-if (mq.matches === false){
-    ExpandedButton()
-    navListeners()
+    LightButton();
+    navListeners(mqMatches);
+    detectCurrentSection();
+  }
+
+  if (mqMatches === false) {
+    const { HeaderMobile } = await import("./components/HeaderMobile.js");
+    const { ExpandedButton } = await import("./components/ExpandedButton.js");
+
+    header.innerHTML = HeaderMobile;
+    ExpandedButton();
+    navListeners();
+  }
 }
 
-function renderHeader ( mqMatches ) {
-    if ( mqMatches === true ) {
-        header.innerHTML = HeaderComputer;
-        LightButton()
-        navListeners(mqMatches)
-        detectCurrentSection()
-        
-    }
+renderHeader(mq.matches);
 
-    if ( mqMatches === false ) {
-        header.innerHTML = HeaderMobile;
-        ExpandedButton()
-        navListeners()
-    }
-}
-
-mq.addEventListener("change", () =>{
-    renderHeader( mq.matches )
-    
-})
-
-
-
-
+mq.addEventListener("change", () => {
+  renderHeader(mq.matches);
+});
