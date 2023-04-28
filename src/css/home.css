@@ -32,8 +32,8 @@
 
 .home__img {
   order: 3;
-  box-shadow: var(--hero-link-shadow)
 }
+
 
 
 
@@ -99,6 +99,10 @@
     padding: 0.75rem 2.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
+    box-shadow: var(--hero-link-shadow)
+ 
+
+
     
     
 }
@@ -165,3 +169,12 @@
     ;
 }
 
+
+@media (min-width: 768px) {
+  .home__img {
+    box-shadow: var(--hero-link-shadow)
+  }
+  .home__button{
+    box-shadow: none;
+  }
+}

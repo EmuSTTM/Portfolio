@@ -22,6 +22,8 @@
     --navbar-bg: #f3f4f6;
     --navbar-border: hsla(0, 0%, 100%, 0.56);
     --navbar-dropdown-item-hover-bg: #e7e9ee;
+        --navbar-menu-link-text-active: #d3c157;
+    --navbar-menu-link-shadow-active: none;
     --navbar-dropdown-item-hover-text: #272a35;
     --navbar-bg-blured: rgba(234, 227, 225, 0.48);
     --max-width: 1200px;
@@ -126,7 +128,7 @@
         --navbar-menu-link: #959cb2;
         --navbar-menu-link-hover: #c3c9da;
         --navbar-menu-link-hover-bg: #22262f;
-        --navbar-menu-link-text-active: #d89ffe;
+        --navbar-menu-link-text-active: #d3c157;
         --navbar-menu-link-shadow-active: rgba(254,159,178,.56);
         --navbar-menu-heading: #5a637c;
         --navbar-menu-modes-bg: #0d0e12;

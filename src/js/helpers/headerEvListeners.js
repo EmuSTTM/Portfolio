@@ -1,8 +1,9 @@
+/*
+Añade event Listeners para actualizar el header al hacer scroll hacia abajo
+o al darle click a cualquier anchor en el modo mobile, de modo que cierre el header
+*/
 
-
-import {HandleExpandedButton} from "./components/ExpandedButton.js";
-
-
+import {HandleExpandedButton} from "../components/ExpandedButton.js";
 export default function navListeners ( computerView = false) {
   const menu_options = document.getElementById("menu_options")
 
@@ -59,11 +60,7 @@ document.getElementById('menu-item-2').addEventListener("click", () => {
   HandleExpandedButton();
 });
 }
-  
-  
- 
-  
-  
+
   
 }
 

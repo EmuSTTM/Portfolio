@@ -1,3 +1,5 @@
+// El menu desplegable para colores que está en el modo Computer
+
 import { MoonSvg } from "./MoonSVG.js";
 import { SunSvg } from "./SunSVG.js";
 
@@ -39,7 +41,21 @@ systemButton.addEventListener("click", () => {
   expandLightButton(button, menu)
 })
 
-
+  // Añadimos las clases dropdown-menu_active y quitamos al resto cuando damos click
+  const buttons = document.querySelectorAll('.menu_item');
+  for (let i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function() {
+        if (this.classList.contains('dropdown-menu_active')) {
+          return;
+        } else {
+          for (let j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove('dropdown-menu_active');
+          }
+          this.classList.add('dropdown-menu_active');
+          
+        }
+      });
+    }
 }
 
 function expandLightButton(button, menu) {

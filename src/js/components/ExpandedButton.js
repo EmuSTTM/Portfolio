@@ -1,3 +1,4 @@
+// El menu desplegable que está en el modo mobile 
 
 function changeButton ( expanded ){
     const button = document.getElementById('nav-toggle');
@@ -36,8 +37,8 @@ export function HandleExpandedButton () {
 }
 
 
+
 function LightsMode (){
-    systemLightDetecter()
     const DarkButton = document.getElementById('headlessui-menu-item-:r7f:')
     DarkButton.addEventListener("click", () => {
     document.documentElement.setAttribute('data-color-mode', 'dark');
@@ -46,7 +47,6 @@ function LightsMode (){
     const modeLightButton = document.getElementById('headlessui-menu-item-:r7h:')
     modeLightButton.addEventListener("click", () => {
     document.documentElement.setAttribute('data-color-mode', 'light');
-
 
     })
 
@@ -75,7 +75,7 @@ function LightsMode (){
 
 
 
-function systemLightDetecter(button = false){
+export function systemLightDetecter(button = false){
     const actualColorMode = document.documentElement.getAttribute('data-color-mode')
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.setAttribute('data-color-mode', 'dark');

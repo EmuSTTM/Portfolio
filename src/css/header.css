@@ -214,3 +214,10 @@
     color: currentColor;
     transition: background-color 125ms ease-in-out;
 }
+
+
+.nav__link-active{
+    color: var(--navbar-menu-link-text-active) !important;
+    text-shadow: 0 0.375em 1em var(--navbar-menu-link-shadow-active);
+ 
+}
