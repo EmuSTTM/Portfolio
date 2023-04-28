@@ -47,8 +47,3 @@ mq.addEventListener("change", () =>{
 
 
 
-const DarkButton = document.getElementById('headlessui-menu-item-:r7f:')
-DarkButton.addEventListener("click", () => {
-  document.documentElement.setAttribute('data-color-mode', 'dark');
-  console.log('el modo es dark')
-})

@@ -18,10 +18,10 @@ function changeButton ( expanded ){
 export default function ExpandedButton () {
     const button = document.getElementById('nav-toggle');
     const menu = document.getElementById('menu_options');
+    console.log('exito carajo')
+    LightsMode()
     button.addEventListener('click', function() {
-        
         HandleExpandedButton ()
-        
       });
 }
 
@@ -34,3 +34,56 @@ export function HandleExpandedButton () {
         changeButton( expanded, button );
         menu.setAttribute('aria-hidden', expanded);
 }
+
+
+function LightsMode (){
+    const DarkButton = document.getElementById('headlessui-menu-item-:r7f:')
+    DarkButton.addEventListener("click", () => {
+    document.documentElement.setAttribute('data-color-mode', 'dark');
+    console.log('el modo es dark')
+    })
+
+    const modeLightButton = document.getElementById('headlessui-menu-item-:r7h:')
+    modeLightButton.addEventListener("click", () => {
+    document.documentElement.setAttribute('data-color-mode', 'light');
+
+
+    })
+
+    const systemButton = document.getElementById('headlessui-menu-item-:r7g:')
+    systemButton.addEventListener("click", () => {
+    systemLightDetecter(true)
+    })
+
+    // Añadimos las clases menu_active y quitamos al resto cuando damos click
+    const buttons = document.querySelectorAll('.menu_mode');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+          if (this.classList.contains('menu_active')) {
+            return;
+          } else {
+            for (let j = 0; j < buttons.length; j++) {
+              buttons[j].classList.remove('menu_active');
+            }
+            this.classList.add('menu_active');
+            HandleExpandedButton ()
+          }
+        });
+      }
+
+}
+
+
+
+function systemLightDetecter(button = false){
+    const actualColorMode = document.documentElement.getAttribute('data-color-mode')
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-color-mode', 'dark');
+      
+  
+    } else if((actualColorMode && actualColorMode === 'light') || button) {
+      document.documentElement.setAttribute('data-color-mode', 'light');
+  
+      
+    }
+  }

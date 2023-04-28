@@ -35,7 +35,7 @@ modeLightButton.addEventListener("click", () => {
 
 const systemButton = document.getElementById('headlessui-menu-item-system')
 systemButton.addEventListener("click", () => {
-  systemLightDetecter(dropBtn)
+  systemLightDetecter(dropBtn, true)
   expandLightButton(button, menu)
 })
 
@@ -49,13 +49,13 @@ function expandLightButton(button, menu) {
 
 }
 
-function systemLightDetecter(dropBtn){
+function systemLightDetecter(dropBtn, button = false){
   const actualColorMode = document.documentElement.getAttribute('data-color-mode')
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.documentElement.setAttribute('data-color-mode', 'dark');
     dropBtn.innerHTML =  MoonSvg
 
-  } else if(actualColorMode && actualColorMode === 'light') {
+  } else if((actualColorMode && actualColorMode === 'light') || button) {
     document.documentElement.setAttribute('data-color-mode', 'light');
 
     dropBtn.innerHTML =  SunSvg
