@@ -1,5 +1,6 @@
 
-function changeButton ( expanded, button ){
+function changeButton ( expanded ){
+    const button = document.getElementById('nav-toggle');
     if (expanded === false) {
         button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" height="20px"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>`
     }
@@ -19,10 +20,17 @@ export default function ExpandedButton () {
     const menu = document.getElementById('menu_options');
     button.addEventListener('click', function() {
         
+        HandleExpandedButton ()
+        
+      });
+}
 
-        const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+
+export function HandleExpandedButton () {
+    const button = document.getElementById('nav-toggle');
+    const menu = document.getElementById('menu_options');
+    const expanded = button.getAttribute('aria-expanded') === 'true' || false;
         button.setAttribute('aria-expanded', !expanded);
         changeButton( expanded, button );
         menu.setAttribute('aria-hidden', expanded);
-      });
 }

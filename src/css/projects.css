@@ -34,6 +34,7 @@
 	-webkit-text-fill-color: transparent;
     background-repeat: repeat;
     background-position: left;
+    text-shadow: var(--title-shadow);
     animation: bgscroll 15s linear infinite;
 }
 .section-title::after {
@@ -183,7 +184,7 @@ img {
 	background-size: 800%;
 	background-position-y: center;
 	background-clip: text;
-
+    box-shadow: var(--hero-link-shadow);
 
 
     background-repeat: repeat;
@@ -203,7 +204,7 @@ img {
     display: flex;
     justify-content: flex-end;
     padding: 0 1.5rem 1.5rem;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .projects_link {

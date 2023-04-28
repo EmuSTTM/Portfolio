@@ -42,14 +42,14 @@ export const HeaderComputer = `
             <section class="menu_items" aria-hidden="true" aria-labelledby="menu_dropbtn"
                 id="menu_items" role="menu" tabindex="0">
                 <button class="menu_item"
-                    id="headlessui-menu-item-:r19:" role="menuitem" tabindex="-1"><svg
+                    id="headlessui-menu-item-dark" role="menuitem" tabindex="-1"><svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                         aria-hidden="true" width="20" height="20">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                     </svg><span>Oscuro</span>
                 </button>
                 <button class="menu_item dropdown-menu_active"
-                    id="headlessui-menu-item-:r1a:" role="menuitem" tabindex="-1"><svg
+                    id="headlessui-menu-item-system" role="menuitem" tabindex="-1"><svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                         aria-hidden="true" width="20" height="20">
                         <path fill-rule="evenodd"
@@ -58,7 +58,7 @@ export const HeaderComputer = `
                     </svg><span>Sistema</span>
                 </button>
                 <button class="menu_item "
-                    id="headlessui-menu-item-:r1b:" role="menuitem" tabindex="-1"><svg
+                    id="headlessui-menu-item-light" role="menuitem" tabindex="-1"><svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                         aria-hidden="true" width="20" height="20">
                         <path fill-rule="evenodd"
