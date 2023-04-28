@@ -18,8 +18,8 @@ function changeButton ( expanded ){
 export default function ExpandedButton () {
     const button = document.getElementById('nav-toggle');
     const menu = document.getElementById('menu_options');
-    console.log('exito carajo')
     LightsMode()
+    
     button.addEventListener('click', function() {
         HandleExpandedButton ()
       });
@@ -37,10 +37,10 @@ export function HandleExpandedButton () {
 
 
 function LightsMode (){
+    systemLightDetecter()
     const DarkButton = document.getElementById('headlessui-menu-item-:r7f:')
     DarkButton.addEventListener("click", () => {
     document.documentElement.setAttribute('data-color-mode', 'dark');
-    console.log('el modo es dark')
     })
 
     const modeLightButton = document.getElementById('headlessui-menu-item-:r7h:')
@@ -82,8 +82,6 @@ function systemLightDetecter(button = false){
       
   
     } else if((actualColorMode && actualColorMode === 'light') || button) {
-      document.documentElement.setAttribute('data-color-mode', 'light');
-  
-      
+      document.documentElement.setAttribute('data-color-mode', 'light');  
     }
   }
