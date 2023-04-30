@@ -26,7 +26,7 @@
     margin: 3rem 0;
     /* color: var(--main-color-transparent) ; */
     text-transform: uppercase;
-    background-image: url(../../images/project-background.png);
+    background-image: url(../../images/project-background.jpg);
 	background-size: 80%;
 	background-position-y: center;
 	background-clip: text;
@@ -180,7 +180,7 @@ img {
     margin-right: 10px;
     /* background: var(--projects-project-link-web-bg);
     color: black; */
-    background-image: url(../../images/project-background.png);
+    background-image: url(../../images/project-background.jpg);
 	background-size: 800%;
 	background-position-y: center;
 	background-clip: text;
