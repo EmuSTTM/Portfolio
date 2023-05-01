@@ -3,9 +3,7 @@
 }
 
 .footer {
-    color: var(b);
     text-align: center;
-    font-weight: var(--font-semi);
     padding: 2rem 0;
     background-color: var(--navbar-bg-blured);
     z-index: -10;
@@ -26,6 +24,7 @@
 
 .footer__title span {
     color: rgb(79, 124, 248);
+    text-decoration: none;
 }
 
 

@@ -95,6 +95,7 @@
     --skill-bash-bg: hsla(var(--bash-color), 8%);
     --skill-bash-fill-color: hsl(var(--bash-color));
     --skill-bash-border-shadow: hsla(var(--bash-color), 8%);
+    --projects-project-image-shadow-color-2:  radial-gradient(circle, rgb(210 102 72 / 43%) 64%, rgba(191, 126, 241, 0.56) 100%);
 
 }
 
